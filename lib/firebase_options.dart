@@ -24,7 +24,7 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+        return any;
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for ios - '
@@ -52,7 +52,7 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions(
+  static const FirebaseOptions any = FirebaseOptions(
     apiKey: 'AIzaSyAN-cb8hSrRds61TdIKTECZuoRJlvOe5wY',
     appId: '1:787051080911:android:05ac9f8caad884cecfdbba',
     messagingSenderId: '787051080911',
@@ -60,3 +60,4 @@ class DefaultFirebaseOptions {
     storageBucket: 'facultyload-6be8b.firebasestorage.app',
   );
 }
+
